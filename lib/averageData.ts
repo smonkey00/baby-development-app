@@ -1,0 +1,180 @@
+type AverageData = {
+  ageMonths: number;
+  gender: "male" | "female";
+  avgHeight: number;
+  avgWeight: number;
+};
+
+// Data source: WHO Child Growth Standards
+// This is a simplified dataset for demonstration purposes
+export const babyData: AverageData[] = [
+  // 0-12 months - Male
+  { ageMonths: 0, gender: "male", avgHeight: 49.9, avgWeight: 3.3 },
+  { ageMonths: 1, gender: "male", avgHeight: 54.7, avgWeight: 4.5 },
+  { ageMonths: 2, gender: "male", avgHeight: 58.4, avgWeight: 5.6 },
+  { ageMonths: 3, gender: "male", avgHeight: 61.4, avgWeight: 6.4 },
+  { ageMonths: 4, gender: "male", avgHeight: 63.9, avgWeight: 7.0 },
+  { ageMonths: 5, gender: "male", avgHeight: 65.9, avgWeight: 7.5 },
+  { ageMonths: 6, gender: "male", avgHeight: 67.6, avgWeight: 7.9 },
+  { ageMonths: 7, gender: "male", avgHeight: 69.2, avgWeight: 8.3 },
+  { ageMonths: 8, gender: "male", avgHeight: 70.6, avgWeight: 8.6 },
+  { ageMonths: 9, gender: "male", avgHeight: 72.0, avgWeight: 8.9 },
+  { ageMonths: 10, gender: "male", avgHeight: 73.3, avgWeight: 9.2 },
+  { ageMonths: 11, gender: "male", avgHeight: 74.5, avgWeight: 9.4 },
+  { ageMonths: 12, gender: "male", avgHeight: 75.7, avgWeight: 9.6 },
+  
+  // 0-12 months - Female
+  { ageMonths: 0, gender: "female", avgHeight: 49.1, avgWeight: 3.2 },
+  { ageMonths: 1, gender: "female", avgHeight: 53.7, avgWeight: 4.2 },
+  { ageMonths: 2, gender: "female", avgHeight: 57.1, avgWeight: 5.1 },
+  { ageMonths: 3, gender: "female", avgHeight: 59.8, avgWeight: 5.8 },
+  { ageMonths: 4, gender: "female", avgHeight: 62.1, avgWeight: 6.4 },
+  { ageMonths: 5, gender: "female", avgHeight: 64.0, avgWeight: 6.9 },
+  { ageMonths: 6, gender: "female", avgHeight: 65.7, avgWeight: 7.3 },
+  { ageMonths: 7, gender: "female", avgHeight: 67.3, avgWeight: 7.6 },
+  { ageMonths: 8, gender: "female", avgHeight: 68.7, avgWeight: 8.0 },
+  { ageMonths: 9, gender: "female", avgHeight: 70.1, avgWeight: 8.2 },
+  { ageMonths: 10, gender: "female", avgHeight: 71.5, avgWeight: 8.5 },
+  { ageMonths: 11, gender: "female", avgHeight: 72.8, avgWeight: 8.7 },
+  { ageMonths: 12, gender: "female", avgHeight: 74.0, avgWeight: 8.9 },
+  
+  // 13-24 months - Male
+  { ageMonths: 13, gender: "male", avgHeight: 76.9, avgWeight: 9.8 },
+  { ageMonths: 14, gender: "male", avgHeight: 78.0, avgWeight: 10.0 },
+  { ageMonths: 15, gender: "male", avgHeight: 79.1, avgWeight: 10.2 },
+  { ageMonths: 16, gender: "male", avgHeight: 80.2, avgWeight: 10.4 },
+  { ageMonths: 17, gender: "male", avgHeight: 81.2, avgWeight: 10.6 },
+  { ageMonths: 18, gender: "male", avgHeight: 82.3, avgWeight: 10.8 },
+  { ageMonths: 19, gender: "male", avgHeight: 83.2, avgWeight: 11.0 },
+  { ageMonths: 20, gender: "male", avgHeight: 84.2, avgWeight: 11.2 },
+  { ageMonths: 21, gender: "male", avgHeight: 85.1, avgWeight: 11.4 },
+  { ageMonths: 22, gender: "male", avgHeight: 86.0, avgWeight: 11.5 },
+  { ageMonths: 23, gender: "male", avgHeight: 86.9, avgWeight: 11.7 },
+  { ageMonths: 24, gender: "male", avgHeight: 87.8, avgWeight: 11.8 },
+  
+  // 13-24 months - Female
+  { ageMonths: 13, gender: "female", avgHeight: 75.2, avgWeight: 9.2 },
+  { ageMonths: 14, gender: "female", avgHeight: 76.4, avgWeight: 9.4 },
+  { ageMonths: 15, gender: "female", avgHeight: 77.5, avgWeight: 9.6 },
+  { ageMonths: 16, gender: "female", avgHeight: 78.6, avgWeight: 9.8 },
+  { ageMonths: 17, gender: "female", avgHeight: 79.7, avgWeight: 10.0 },
+  { ageMonths: 18, gender: "female", avgHeight: 80.7, avgWeight: 10.2 },
+  { ageMonths: 19, gender: "female", avgHeight: 81.7, avgWeight: 10.4 },
+  { ageMonths: 20, gender: "female", avgHeight: 82.7, avgWeight: 10.6 },
+  { ageMonths: 21, gender: "female", avgHeight: 83.7, avgWeight: 10.8 },
+  { ageMonths: 22, gender: "female", avgHeight: 84.6, avgWeight: 11.0 },
+  { ageMonths: 23, gender: "female", avgHeight: 85.5, avgWeight: 11.2 },
+  { ageMonths: 24, gender: "female", avgHeight: 86.4, avgWeight: 11.4 },
+  
+  // 25-36 months - Male
+  { ageMonths: 25, gender: "male", avgHeight: 88.6, avgWeight: 12.0 },
+  { ageMonths: 26, gender: "male", avgHeight: 89.4, avgWeight: 12.1 },
+  { ageMonths: 27, gender: "male", avgHeight: 90.2, avgWeight: 12.3 },
+  { ageMonths: 28, gender: "male", avgHeight: 91.0, avgWeight: 12.4 },
+  { ageMonths: 29, gender: "male", avgHeight: 91.7, avgWeight: 12.6 },
+  { ageMonths: 30, gender: "male", avgHeight: 92.5, avgWeight: 12.7 },
+  { ageMonths: 31, gender: "male", avgHeight: 93.2, avgWeight: 12.9 },
+  { ageMonths: 32, gender: "male", avgHeight: 94.0, avgWeight: 13.0 },
+  { ageMonths: 33, gender: "male", avgHeight: 94.7, avgWeight: 13.2 },
+  { ageMonths: 34, gender: "male", avgHeight: 95.4, avgWeight: 13.3 },
+  { ageMonths: 35, gender: "male", avgHeight: 96.1, avgWeight: 13.5 },
+  { ageMonths: 36, gender: "male", avgHeight: 96.9, avgWeight: 13.6 },
+  
+  // 25-36 months - Female
+  { ageMonths: 25, gender: "female", avgHeight: 87.3, avgWeight: 11.5 },
+  { ageMonths: 26, gender: "female", avgHeight: 88.1, avgWeight: 11.7 },
+  { ageMonths: 27, gender: "female", avgHeight: 88.9, avgWeight: 11.8 },
+  { ageMonths: 28, gender: "female", avgHeight: 89.7, avgWeight: 12.0 },
+  { ageMonths: 29, gender: "female", avgHeight: 90.5, avgWeight: 12.1 },
+  { ageMonths: 30, gender: "female", avgHeight: 91.2, avgWeight: 12.3 },
+  { ageMonths: 31, gender: "female", avgHeight: 92.0, avgWeight: 12.4 },
+  { ageMonths: 32, gender: "female", avgHeight: 92.7, avgWeight: 12.6 },
+  { ageMonths: 33, gender: "female", avgHeight: 93.4, avgWeight: 12.7 },
+  { ageMonths: 34, gender: "female", avgHeight: 94.1, avgWeight: 12.9 },
+  { ageMonths: 35, gender: "female", avgHeight: 94.8, avgWeight: 13.0 },
+  { ageMonths: 36, gender: "female", avgHeight: 95.5, avgWeight: 13.2 },
+  
+  // 37-48 months - Male
+  { ageMonths: 37, gender: "male", avgHeight: 97.6, avgWeight: 13.8 },
+  { ageMonths: 38, gender: "male", avgHeight: 98.3, avgWeight: 13.9 },
+  { ageMonths: 39, gender: "male", avgHeight: 99.0, avgWeight: 14.1 },
+  { ageMonths: 40, gender: "male", avgHeight: 99.7, avgWeight: 14.2 },
+  { ageMonths: 41, gender: "male", avgHeight: 100.3, avgWeight: 14.4 },
+  { ageMonths: 42, gender: "male", avgHeight: 101.0, avgWeight: 14.5 },
+  { ageMonths: 43, gender: "male", avgHeight: 101.7, avgWeight: 14.7 },
+  { ageMonths: 44, gender: "male", avgHeight: 102.3, avgWeight: 14.8 },
+  { ageMonths: 45, gender: "male", avgHeight: 103.0, avgWeight: 15.0 },
+  { ageMonths: 46, gender: "male", avgHeight: 103.6, avgWeight: 15.1 },
+  { ageMonths: 47, gender: "male", avgHeight: 104.2, avgWeight: 15.3 },
+  { ageMonths: 48, gender: "male", avgHeight: 104.9, avgWeight: 15.4 },
+  
+  // 37-48 months - Female
+  { ageMonths: 37, gender: "female", avgHeight: 96.2, avgWeight: 13.3 },
+  { ageMonths: 38, gender: "female", avgHeight: 96.9, avgWeight: 13.5 },
+  { ageMonths: 39, gender: "female", avgHeight: 97.5, avgWeight: 13.6 },
+  { ageMonths: 40, gender: "female", avgHeight: 98.2, avgWeight: 13.8 },
+  { ageMonths: 41, gender: "female", avgHeight: 98.8, avgWeight: 13.9 },
+  { ageMonths: 42, gender: "female", avgHeight: 99.4, avgWeight: 14.1 },
+  { ageMonths: 43, gender: "female", avgHeight: 100.1, avgWeight: 14.2 },
+  { ageMonths: 44, gender: "female", avgHeight: 100.7, avgWeight: 14.4 },
+  { ageMonths: 45, gender: "female", avgHeight: 101.3, avgWeight: 14.5 },
+  { ageMonths: 46, gender: "female", avgHeight: 101.9, avgWeight: 14.7 },
+  { ageMonths: 47, gender: "female", avgHeight: 102.5, avgWeight: 14.8 },
+  { ageMonths: 48, gender: "female", avgHeight: 103.1, avgWeight: 15.0 },
+  
+  // 49-60 months - Male
+  { ageMonths: 49, gender: "male", avgHeight: 105.5, avgWeight: 15.6 },
+  { ageMonths: 50, gender: "male", avgHeight: 106.1, avgWeight: 15.8 },
+  { ageMonths: 51, gender: "male", avgHeight: 106.7, avgWeight: 15.9 },
+  { ageMonths: 52, gender: "male", avgHeight: 107.3, avgWeight: 16.1 },
+  { ageMonths: 53, gender: "male", avgHeight: 107.9, avgWeight: 16.2 },
+  { ageMonths: 54, gender: "male", avgHeight: 108.5, avgWeight: 16.4 },
+  { ageMonths: 55, gender: "male", avgHeight: 109.1, avgWeight: 16.5 },
+  { ageMonths: 56, gender: "male", avgHeight: 109.6, avgWeight: 16.7 },
+  { ageMonths: 57, gender: "male", avgHeight: 110.2, avgWeight: 16.8 },
+  { ageMonths: 58, gender: "male", avgHeight: 110.8, avgWeight: 17.0 },
+  { ageMonths: 59, gender: "male", avgHeight: 111.3, avgWeight: 17.2 },
+  { ageMonths: 60, gender: "male", avgHeight: 111.9, avgWeight: 17.3 },
+  
+  // 49-60 months - Female
+  { ageMonths: 49, gender: "female", avgHeight: 103.7, avgWeight: 15.1 },
+  { ageMonths: 50, gender: "female", avgHeight: 104.3, avgWeight: 15.3 },
+  { ageMonths: 51, gender: "female", avgHeight: 104.9, avgWeight: 15.4 },
+  { ageMonths: 52, gender: "female", avgHeight: 105.4, avgWeight: 15.6 },
+  { ageMonths: 53, gender: "female", avgHeight: 106.0, avgWeight: 15.7 },
+  { ageMonths: 54, gender: "female", avgHeight: 106.6, avgWeight: 15.9 },
+  { ageMonths: 55, gender: "female", avgHeight: 107.1, avgWeight: 16.0 },
+  { ageMonths: 56, gender: "female", avgHeight: 107.7, avgWeight: 16.2 },
+  { ageMonths: 57, gender: "female", avgHeight: 108.2, avgWeight: 16.3 },
+  { ageMonths: 58, gender: "female", avgHeight: 108.8, avgWeight: 16.5 },
+  { ageMonths: 59, gender: "female", avgHeight: 109.3, avgWeight: 16.6 },
+  { ageMonths: 60, gender: "female", avgHeight: 109.9, avgWeight: 16.8 },
+  
+  // 61-72 months - Male
+  { ageMonths: 61, gender: "male", avgHeight: 112.4, avgWeight: 17.5 },
+  { ageMonths: 62, gender: "male", avgHeight: 113.0, avgWeight: 17.7 },
+  { ageMonths: 63, gender: "male", avgHeight: 113.5, avgWeight: 17.8 },
+  { ageMonths: 64, gender: "male", avgHeight: 114.0, avgWeight: 18.0 },
+  { ageMonths: 65, gender: "male", avgHeight: 114.6, avgWeight: 18.2 },
+  { ageMonths: 66, gender: "male", avgHeight: 115.1, avgWeight: 18.3 },
+  { ageMonths: 67, gender: "male", avgHeight: 115.6, avgWeight: 18.5 },
+  { ageMonths: 68, gender: "male", avgHeight: 116.1, avgWeight: 18.7 },
+  { ageMonths: 69, gender: "male", avgHeight: 116.6, avgWeight: 18.8 },
+  { ageMonths: 70, gender: "male", avgHeight: 117.1, avgWeight: 19.0 },
+  { ageMonths: 71, gender: "male", avgHeight: 117.6, avgWeight: 19.2 },
+  { ageMonths: 72, gender: "male", avgHeight: 118.1, avgWeight: 19.3 },
+  
+  // 61-72 months - Female
+  { ageMonths: 61, gender: "female", avgHeight: 110.4, avgWeight: 16.9 },
+  { ageMonths: 62, gender: "female", avgHeight: 110.9, avgWeight: 17.1 },
+  { ageMonths: 63, gender: "female", avgHeight: 111.4, avgWeight: 17.2 },
+  { ageMonths: 64, gender: "female", avgHeight: 112.0, avgWeight: 17.4 },
+  { ageMonths: 65, gender: "female", avgHeight: 112.5, avgWeight: 17.5 },
+  { ageMonths: 66, gender: "female", avgHeight: 113.0, avgWeight: 17.7 },
+  { ageMonths: 67, gender: "female", avgHeight: 113.5, avgWeight: 17.8 },
+  { ageMonths: 68, gender: "female", avgHeight: 114.0, avgWeight: 18.0 },
+  { ageMonths: 69, gender: "female", avgHeight: 114.5, avgWeight: 18.1 },
+  { ageMonths: 70, gender: "female", avgHeight: 115.0, avgWeight: 18.3 },
+  { ageMonths: 71, gender: "female", avgHeight: 115.5, avgWeight: 18.5 },
+  { ageMonths: 72, gender: "female", avgHeight: 116.0, avgWeight: 18.6 }
+];
