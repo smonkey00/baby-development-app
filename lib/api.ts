@@ -1,7 +1,7 @@
 import { BabyInfo } from './types';
 
 // SiliconFlow API配置
-const API_KEY = 'sk-dbhedsfombdudikpifcgiagdogkgjbzzjycaodmrzhsfyqxv';
+const API_KEY = process.env.SILICONFLOW_API_KEY || 'sk-dbhedsfombdudikpifcgiagdogkgjbzzjycaodmrzhsfyqxv';
 const API_URL = 'https://api.siliconflow.cn/v1/chat/completions';
 
 export async function getAISuggestion(baby: BabyInfo): Promise<string> {
