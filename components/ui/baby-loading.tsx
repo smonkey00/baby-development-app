@@ -11,7 +11,7 @@ export default function BabyLoading({ message = "正在分析宝宝的成长数�
   const [currentStep, setCurrentStep] = useState(0);
 
   const steps = [
-    { emoji: "👶", text: "收集宝宝信息" },
+    { emoji: "👶", text: "分析宝宝信息" },
     { emoji: "📊", text: "对比WHO标准" },
     { emoji: "🤖", text: "AI智能分析" },
     { emoji: "📝", text: "生成专属建议" }
